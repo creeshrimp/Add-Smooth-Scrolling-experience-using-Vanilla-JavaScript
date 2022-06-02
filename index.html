@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Smooth Scroll</title>
         <link rel="stylesheet" href="style.css" />
+        
     </head>
     <body>
         <div class="smooth-scroll-wrapper">
@@ -88,9 +89,10 @@
         </div>
         <script>
             const body = document.body,
-                scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+                scrollWrap = document.querySelector(".smooth-scroll-wrapper"),
                 height = scrollWrap.getBoundingClientRect().height - 1,
                 speed = 0.04;
+                // speed = 0.04;
 
             var offset = 0;
 
